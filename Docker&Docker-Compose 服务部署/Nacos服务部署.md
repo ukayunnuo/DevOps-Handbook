@@ -75,6 +75,7 @@ nacos/nacos-server:v2.3.2
 ```
 
 ### Docker-Compose 部署
+
 ```yaml
 
 version: '3'
@@ -107,3 +108,8 @@ services:
 ```
 
 ## 部署成功页面
+
+访问地址： http://ip:8848/nacos/index.html
+
+- 默认账号密码：nacos/nacos
+![img.png](images/nacos1.png)

@@ -81,3 +81,5 @@ services:
 ```
 
 ## 部署成功页面
+
+![nginx1.png](images%2Fnginx1.png)
