@@ -76,6 +76,16 @@ nacos/nacos-server:v2.3.2
 
 ### Docker-Compose 部署
 
+- 创建docker-compose文件
+
+```bash
+# 创建存放docker-compose文件路径
+mkdir -p /data/docker-compose-files/nacos
+
+# 创建配置文件
+vim /data/docker-compose-files/nacos/docker-compose.yml
+```
+
 ```yaml
 
 version: '3'

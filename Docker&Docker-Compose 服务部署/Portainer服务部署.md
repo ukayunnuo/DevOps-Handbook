@@ -46,6 +46,15 @@ docker run -d --restart always --privileged\
 
 ### portainer-ce(服务端)
 
+- 创建docker-compose文件
+
+```bash
+# 创建存放docker-compose文件路径
+mkdir -p /data/docker-compose-files/portainer-server
+# 创建配置文件
+vim /data/docker-compose-files/portainer-server/docker-compose.yml
+```
+
 ```yaml
 
 version: '3'
@@ -66,6 +75,15 @@ services:
 ```
 
 ### portainer-agent（代理）
+
+- 创建docker-compose文件
+
+```bash
+# 创建存放docker-compose文件路径
+mkdir -p /data/docker-compose-files/portainer-agent
+# 创建配置文件
+vim /data/docker-compose-files/portainer-agent/docker-compose.yml
+```
 
 ```yaml
 version: '3'
@@ -93,4 +111,4 @@ services:
   ![portainer2.png](images%2Fportainer2.png)
 
 - 选择Docker Standalone
-![portainer3.png](images%2Fportainer3.png)
+  ![portainer3.png](images%2Fportainer3.png)
