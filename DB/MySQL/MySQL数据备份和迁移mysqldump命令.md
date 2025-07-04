@@ -1,4 +1,4 @@
-# MySQL数据迁移 mysqldump命令
+# MySQL数据备份、迁移 mysqldump命令
 
 ```bash
 # 导出所有数据库数据
