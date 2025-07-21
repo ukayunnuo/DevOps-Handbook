@@ -313,7 +313,7 @@ output {
 
 ### kibana配置日志查看↑和nginx的配置一样
 
-![elk2.png](images%2Felk2.png)![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/ff6f82727298464bbc313001baa1bc67.png)
+![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/ff6f82727298464bbc313001baa1bc67.png)
 
 ## logstash多文件配置
 
@@ -377,3 +377,6 @@ output {
 }
 
 ```
+
+## 效果图
+![elk2.png](images%2Felk2.png)
