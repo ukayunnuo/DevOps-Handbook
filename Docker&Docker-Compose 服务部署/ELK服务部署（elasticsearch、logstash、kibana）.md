@@ -188,6 +188,8 @@ networks:
 ```
 
 ## 安装ik分词器
+[Elasticsearch安装ik分词器.md](..%2Felasticsearch%2FElasticsearch%E5%AE%89%E8%A3%85ik%E5%88%86%E8%AF%8D%E5%99%A8.md)
 
 
 ## 部署成功页面
+![elk1.png](images%2Felk1.png)
