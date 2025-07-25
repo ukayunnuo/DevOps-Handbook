@@ -1,6 +1,13 @@
 # Docker&Docker-Compose MangoDB 服务部署
 
+## 官网
+
+[https://www.mongodb.com/zh-cn](https://www.mongodb.com/zh-cn)
+
 ## 介绍
+
+MongoDB 是一种流行的开源 NoSQL 数据库，它存储数据的形式为文档，具体来说是以 BSON（类似于 JSON 的二进制形式）格式存储的文档数据库。这种灵活性允许
+MongoDB 在处理数据时比传统的关系型数据库更加灵活，尤其是在需要处理非结构化或半结构化数据的情况下。
 
 ## 示例版本：5.0.5
 
@@ -160,7 +167,6 @@ docker-compose -f /data/docker-compose-files/mongodb/docker-compose.yml  up -d
 
 ### 集群版
 
-
 - 创建docker-compose文件
 
 ```bash
@@ -184,7 +190,7 @@ services:
       - /data/docker/mongodb1/conf:/data/configdb
       - /data/docker/mongodb1/data:/data/db
       - /data/docker/mongodb1/log:/var/log/mongodb
-    command: ["mongod", "-f", "/data/configdb/mongo.yaml", "--bind_ip_all"]
+    command: [ "mongod", "-f", "/data/configdb/mongo.yaml", "--bind_ip_all" ]
     privileged: true
 
   mongo-server2:
@@ -197,7 +203,7 @@ services:
       - /data/docker/mongodb2/conf:/data/configdb
       - /data/docker/mongodb2/data:/data/db
       - /data/docker/mongodb2/log:/var/log/mongodb
-    command: ["mongod", "-f", "/data/configdb/mongo.yaml", "--bind_ip_all"]
+    command: [ "mongod", "-f", "/data/configdb/mongo.yaml", "--bind_ip_all" ]
     privileged: true
 
   mongo-server3:
@@ -210,7 +216,7 @@ services:
       - /data/docker/mongodb3/conf:/data/configdb
       - /data/docker/mongodb3/data:/data/db
       - /data/docker/mongodb3/log:/var/log/mongodb
-    command: ["mongod", "-f", "/data/configdb/mongo.yaml", "--bind_ip_all"]
+    command: [ "mongod", "-f", "/data/configdb/mongo.yaml", "--bind_ip_all" ]
     privileged: true
 
 ```
