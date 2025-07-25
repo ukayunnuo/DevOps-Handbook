@@ -22,6 +22,7 @@
 | [Mariadb服务部署.md](Mariadb服务部署.md)                                                       | MariaDB               | `10.6.5`            | 开源关系型数据库，MySQL 分支         |
 | [Memcached服务部署.md](Memcached服务部署.md)                                                   | Memcached             | `1.6.12`            | 高性能分布式内存缓存系统              |
 | [Portainer服务部署.md](Portainer服务部署.md)                                                   | Portainer             | `2.21.3`            | Docker 容器可视化管理工具          |
+| [MangoDB服务部署.md](MangoDB服务部署.md)                                                       | MangoDB               | `5.0.5`             | NoSQL数据库，适用于数据存储和查询       |`   
 
 ---
 
