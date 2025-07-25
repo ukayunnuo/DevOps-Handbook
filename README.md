@@ -27,6 +27,7 @@
 | [MangoDB服务部署.md](MangoDB服务部署.md)                                                                                 | MangoDB               | `5.0.5`                             | NoSQL数据库，适用于数据存储和查询               |`   
 | [Minio服务部署.md](Minio服务部署.md)                                                                                     | Minio                 | `RELEASE.2024-09-09T16-59-28Z.fips` | MinIO是分布式文件存储服务，用于存储对象数据。         |`   
 | [mosquitto(mqtt) 服务部署.md](mosquitto%28mqtt%29%20%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2.md)                         | mosquitto             | `2`                                 | mosquitto服务是MQTT协议消息代理，常用于物联网设备通信 |`   
+| [TDengine服务部署.md](TDengine%E6%9C%8D%E5%8A%A1%E9%83%A8%E7%BD%B2.md)                       | TDengine              | `3.1.1.0`                           | TDengine 是一款 开源、高性能、云原生 的时序数据库    |`   
 
 ---
 
