@@ -68,18 +68,18 @@ max_allowed_packet=64M
 max_connections=1000
 read_rnd_buffer_size=32M
 ############log set###################
-log-error=/usr/local/mysql/logs/mysqld.err
-log-bin=/usr/local/mysql/logs/binlog
-log_bin_index=/usr/local/mysql/logs/binlog.index
+log-error=/var/log/mysql/mysqld.error.log
+log-bin=/var/log/mysql/binlog
+log_bin_index=/var/log/mysql/binlog.index
 max_binlog_size=500M
-slow_query_log_file=/usr/local/mysql/logs/slow.log
+slow_query_log_file=/var/log/mysql/slow.log
 slow_query_log=1
 long_query_time=10
 log_queries_not_using_indexes=ON
 log_throttle_queries_not_using_indexes=10
 log_slow_admin_statements=ON
 log_output=FILE,TABLE
-master_info_file=/usr/local/mysql/logs/master.info
+master_info_file=/var/log/mysql/master.info
 [client]
 default-character-set=utf8mb4  # 设置mysql客户端默认字符集
 ```
@@ -225,18 +225,18 @@ max_allowed_packet=64M
 max_connections=1000
 read_rnd_buffer_size=32M
 ############log set###################
-#log-error                       = /usr/local/mysql/logs/mysqld.err
-#log-bin                         = /usr/local/mysql/logs/binlog
-#log_bin_index                   = /usr/local/mysql/logs/binlog.index
+log-error                       = /var/log/mysql/mysqld.error.log
+log-bin                         = /var/log/mysql/binlog
+log_bin_index                   = /var/log/mysql/binlog.index
 max_binlog_size=500M
 slow_query_log=1
-#slow_query_log_file             = /usr/local/mysql/logs/slow.log
+#slow_query_log_file             = /var/log/mysql/slow.log
 long_query_time=10
 log_queries_not_using_indexes=ON
 log_throttle_queries_not_using_indexes=10
 log_slow_admin_statements=ON
 log_output=FILE,TABLE
-master_info_file=/usr/local/mysql/logs/master.info
+master_info_file=/var/log/mysql/master.info
 [client]
 default-character-set=utf8mb4  # 设置mysql客户端默认字符集
 
