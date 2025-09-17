@@ -27,6 +27,7 @@ chmod -R 644 /data/docker/mysql5.7/conf
 
 ```properties
 [mysqld]
+character-set-server=utf8
 lower_case_table_names=1
 user=mysql
 server_id=1
@@ -82,6 +83,10 @@ log_output=FILE,TABLE
 master_info_file=/var/log/mysql/master.info
 [client]
 default-character-set=utf8mb4  # 设置mysql客户端默认字符集
+
+[mysql]
+default-character-set=utf8
+
 ```
 
 ### Docker 部署
