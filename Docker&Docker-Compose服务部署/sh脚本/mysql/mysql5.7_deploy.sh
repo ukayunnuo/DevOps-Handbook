@@ -8,7 +8,7 @@ mkdir -p /data/docker/mysql5.7/{data,logs,conf}
 # 创建配置文件
 cat > /data/docker/mysql5.7/conf/my.cnf << 'EOF'
 [mysqld]
-character-set-server=utf8
+character-set-server=utf8m64
 lower_case_table_names=1
 user=mysql
 server_id=1
@@ -64,11 +64,9 @@ log_output=FILE,TABLE
 master_info_file=/var/log/mysql/master.info
 [client]
 default-character-set=utf8mb4  # 设置mysql客户端默认字符集
-default-character-set=utf8
 
 [mysql]
-default-character-set=utf8
-
+default-character-set=utf8m64
 EOF
 
 # 设置权限
