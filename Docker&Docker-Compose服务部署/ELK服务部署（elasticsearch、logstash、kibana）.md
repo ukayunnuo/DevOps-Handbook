@@ -83,6 +83,8 @@ docker run -d \
   -e discovery.type=single-node \
   -e bootstrap.memory_lock=true \
   -e ES_JAVA_OPTS=-Xms512m -Xmx512m \
+  -e network.publish_host=192.168.0.128 \
+  -e network.bind_host=0.0.0.0 \
   --ulimit memlock=-1:-1 \
   -v esdata:/usr/share/elasticsearch/data \
   -p 9200:9200 \
@@ -133,7 +135,9 @@ services:
       - cluster.name=es-docker-cluster  
       - discovery.type=single-node  
       - bootstrap.memory_lock=true  
-      - ES_JAVA_OPTS=-Xms512m -Xmx512m  
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+      - network.publish_host=192.168.0.128  # 新增：强制嗅探返回公网IP
+      - network.bind_host=0.0.0.0          # 新增：绑定所有IP
     ulimits:  
       memlock:  
         soft: -1  
